@@ -1,0 +1,12 @@
+export { default as WhatWeDo } from './whatWeDo/WhatWeDo';
+export { default as Solutions } from './solutions/Solutions';
+export { default as Portfolio } from './portfolio/Portfolio';
+export { default as HowWeAct } from './howWeAct/HowWeAct';
+export { default as WhoWeAre } from './whoWeAre/WhoWeAre';
+export { default as Contact } from './contact/Contact';
+export { default as Suport } from './suport/Suport';
+export { default as Construction } from './construction/Construction';
+export { default as Agribusiness } from './agribusiness/Agribusiness';
+export { default as OrderOfService } from './orderOfService/OrderOfService';
+export { default as NotFound } from './notFound/NotFound';
+export { default as Footer } from './footer/Footer';

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    /*--FONT-FAMILY--*/
+    --font-family: 'Ubuntu', sans-serif;
+
+    /*--BORDER-RADIUS--*/
+    --blur: blur(8px);
+
+    /*--BORDER-RADIUS--*/
+    --border-radius-defaut: 12px;
+    --border-radius-button: 8px;
+    --border-radius-rounded: 100%;
+    --border-radius-left-button: 8px 0px 0px 8px;
+
+    /*--FONT-SIZE--*/
+    --h1: 62px;
+    --h2: 32px;
+    --p-bigger: 26px;
+    --p-medium: 22px;
+    --p-smaller: 18px;
+    --p-smallest: 14px;
+
+    /*--FONT-WEIGHT--*/
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+
+    /*--SHADOW--*/
+    --shadow-txt: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --shadow-defaut: 0px 4px 15px rgba(0, 0, 0, 0.25);
+
+  /*--LIGHT--MODE--*/
+
+  /*--BACKGROUND--*/
+  --primary-color-bg-l:#005B86;
+  --secondary-color-bg-l:#ECF4FF;
+  --tertiary-color-bg-l:#fff;
+  --transparent-bg-l:rgba(255, 255, 255, 0.1);
+  --gradient-bg-l:radial-gradient(circle at 0.68% 0%, #18B1F2 0%, #085EC2 100%);
+  --image-bg-l: #18B1F2;
+  --blend-image-bg-l: none;
+  
+  /*--BORDER_COLOR--*/
+  --primary-border-l: 0.1px solid rgba(24, 177, 242, 0.4);
+  --secondary-border-l: 0.1px solid rgba(255, 255, 255, 0.4);
+  --border-button-l: none;
+
+  /*--h1--*/
+  --primary-color-h1-l:#2F80ED;
+  --secondary-color-h1-l:#fff;
+  --tertiary-color-h1-l:#a1a1a1;
+
+  /*--p--*/
+  --primary-color-p-l:#18B1F2;
+  --primary-color-p-hover-l:#59ccfd;
+  --secondary-color-p-l:#fff;
+  --tertiary-color-p-l:#a1a1a1;
+
+  /*--BUTTON--*/
+  --primary-button-l:#18B1F2;
+  --primary-button-hover-l:#59ccfd;
+  --secondary-button-l:#39E47E;
+  --secondary-button-hover-l:#3ff588;
+  --icon-bg-button-l: rgba(0, 0, 0, 0.25);
+  --primary-icon-color-l: #18B1F2;
+  --secondary-icon-color-l: #fff;
+
+  /*--NAVBAR--*/
+  --navbar-primary-color-bg-l:#fff;
+  --navbar-secondary-color-bg-l:rgba(255, 255, 255, 0.6);
+  --navbar-primary-color-icon-l:#18B1F2;
+
+  /*--SWITCH--*/
+  --switch-checked-l:36px;
+  --switch-bg-l:#d1d1d1;
+  --switch-toggle-l:#fff;
+  --switch-toggle-hover-l:rgb(245, 245, 245);
+  --switch-icon-l:#fff;
+
+  /*--DARK--MODE--*/
+
+  /*--BACKGROUND--*/
+  --primary-color-bg-d:rgb(27, 27, 27);
+  --secondary-color-bg-d:rgb(33, 33, 33);
+  --tertiary-color-bg-d:hsl(0, 0%, 18%);
+  --transparent-bg-d:rgba(0, 0, 0, 0.4);
+  --gradient-bg-d: radial-gradient(circle at 3% 25%, #023166 0%, #011225 25%);
+  --image-bg-d: rgba(0, 0, 0, 0.6);
+  --blend-image-bg-d: darken;
+  
+  /*--BORDER_COLOR--*/
+  --primary-border-d: 0.1px solid rgba(255, 255, 255, 0.2);
+  --secondary-border-d: 0.1px solid rgba(255, 255, 255, 0.2);
+  --border-button-d: 0.1px solid rgba(255, 255, 255, 0.1);
+
+  /*--h1--*/
+  --primary-color-h1-d:#fff;
+  --secondary-color-h1-d:#fff;
+  --tertiary-color-h1-d:rgb(223, 223, 223);
+
+  /*--p--*/
+  --primary-color-p-d:hsla(0, 100%, 100%, 0.7);
+  --primary-color-p-hover-d:#fff;
+  --secondary-color-p-d:#fff;
+  --tertiary-color-p-d:rgb(180, 180, 180);
+
+  /*--BUTTON--*/
+  --primary-button-d:hsl(0, 0%, 18%);
+  --primary-button-hover-d:hsl(0, 0%, 22%);
+  --secondary-button-d:#36a55b;
+  --secondary-button-hover-d:#41c76e;
+  --icon-bg-button-d: rgba(0, 0, 0, 0.25);
+  --primary-icon-color-d: #fff;
+  --secondary-icon-color-d: rgb(223, 223, 223);
+
+  /*--NAVBAR--*/
+  --navbar-primary-color-bg-d:rgb(33, 33, 33);
+  --navbar-secondary-color-bg-d:rgba(33, 33, 33, 0.6);
+  --navbar-primary-color-icon-d:hsla(0, 100%, 100%, 0.7);
+
+  /*--SWITCH--*/
+  --switch-checked-d:6px;
+  --switch-bg-d:hsl(0, 0%, 18.82%);
+  --switch-toggle-d:#36a55b;
+  --switch-toggle-hover-d:#41c76e;
+  --switch-icon-d:hsla(0, 100%, 100%, 0.7);
+
+}

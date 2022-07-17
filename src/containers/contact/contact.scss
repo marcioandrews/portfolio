@@ -1,0 +1,206 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    align-items: center;
+  }
+  
+  .contact-content__header {
+    display: flex;
+    padding-block: 1rem;
+    background: var(--gradient-bg);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  
+    h1 {
+      font-family: var(--font-family);
+      color: var(--secondary-color-h1);
+      font-weight: var(--bold);
+      font-size: var(--h1);
+      line-height: 75px;
+      letter-spacing: -0.04em;
+      text-align: center;
+    }
+  }
+  
+  .contact-content__header__elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-content__header__elements__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    min-width: 150px;
+    background: var(--transparent-bg);
+    margin: 2rem 1rem;
+    border-radius: var(--border-radius-defaut);
+    cursor: pointer;
+    border: var(--border-button);
+    box-shadow: var(--shadow-defaut);
+  }
+
+  #phone {
+    cursor: auto;
+  }
+  
+  .contact-content__header__elements__box p {
+    padding-top: .5rem;
+    font-family: var(--font-family);
+    color: var(--secondary-color-p);
+    font-weight: var(--regular);
+    font-size: var(--p-smallest);
+  }
+  
+  .contact-content__header__elements__box__icon {
+    display: flex;
+    border: var(--secondary-border);
+    border-radius: var(--border-radius-rounded);
+    padding: 1.5rem;
+  }
+  
+  .contact-content__header__elements__box svg {
+    fill: var(--secondary-icon-color);
+    width: 28px;
+    height: 28px;
+  }
+  
+  .contact-content__body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color-bg);
+    border-radius: var(--border-radius-defaut);
+    max-width: 600px;
+    margin-inline: 1rem;
+    margin-block: 3rem;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-defaut);
+    border: var(--secondary-border);
+  
+    h2 {
+      color: var(--primary-color-p);
+      font-family: var(--font-family);
+      font-weight: var(--bold);
+      font-size: var(--h2);
+      text-align: center;
+      padding-bottom: 1.5rem;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  
+      label {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        color: var(--tertiary-color-p);
+        font-family: var(--font-family);
+        font-weight: var(--medium);
+        font-size: var(--p-smaller);
+  
+        p {
+          padding-left: .2rem;
+          color: var(--tertiary-color-p);
+          font-family: var(--font-family);
+          font-weight: var(--regular);
+          font-size: var(--p-smallest);
+        }
+      }
+  
+      input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 2rem;
+        border-radius: var(--border-radius-button);
+        border: var(--primary-border);
+        outline-color: var(--primary-color-p);
+        padding: 1rem;
+        font-family: var(--font-family);
+        font-weight: var(--regular);
+        font-size: var(--p-smallest);
+  
+        &::placeholder {
+          color: var(--tertiary-color-p);
+        }
+      }
+  
+      textarea {
+        border: var(--primary-border);
+        resize: vertical;
+        width: 100%;
+        margin-bottom: 2rem;
+        border-radius: var(--border-radius-button);
+        border: var(--primary-border);
+        outline-color: var(--primary-color-p);
+        padding: 1rem;
+        font-family: var(--font-family);
+        font-weight: var(--regular);
+        font-size: var(--p-smallest);
+
+        &::placeholder {
+          color: var(--tertiary-color-p);
+        }
+  
+      }
+    }
+  }
+  
+  .contact-content__body__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--secondary-button);
+    cursor: pointer;
+    border-radius: var(--border-radius-button);
+    transition: .4s;
+    width: 100%;
+  
+    button {
+      color: var(--secondary-color-p);
+      font-family: var(--font-family);
+      font-weight: var(--regular);
+      font-size: 26px;
+      line-height: 25px;
+      padding: 1rem 1.5rem;
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+    }
+  
+    &:hover {
+      background: var(--secondary-button-hover);
+    }
+  }
+  
+  .contact-content__body__button__icon {
+    background-color:  var(--icon-bg-button);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius-left-button);
+  
+    svg {
+      fill: var(--secondary-icon-color);
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  @media screen and (max-width: 1920px) {
+    .contact-content__header h1 {
+        font-size: 48px;
+    }
+  }

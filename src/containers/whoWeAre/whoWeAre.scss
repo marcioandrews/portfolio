@@ -1,0 +1,86 @@
+.WhoWeAre {
+    display: flex;
+    flex-direction: row;
+    padding-block: 4rem;
+    padding-inline: 20rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .WhoWeAre-content__image img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .WhoWeAre-content__plataform {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .WhoWeAre-content__plataform__separator {
+    display: flex;
+    background-color: var(--navbar-primary-color-icon);
+    height: auto;
+    width: 5px;
+    margin-inline: 2rem;
+  }
+  
+  .WhoWeAre-content__plataform__title h2 {
+    font-size: var(--h2);
+    width: 650px;
+    font-weight: var(--bold);
+    font-family: var(--font-family);
+    color: var(--primary-color-h1);
+    margin-bottom: 1.5rem;
+  }
+  
+  .WhoWeAre-content__plataform__text p {
+    font-size: var(--p-medium);
+    width: 700px;
+    font-weight: var(--regular);
+    font-family: var(--font-family);
+    color: var(--tertiary-color-p);
+  }
+  
+  @media screen and (max-width: 1920px) {
+    .WhoWeAre {
+      padding-inline: 6rem;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .WhoWeAre {
+      padding-inline: 4rem;
+    }
+  
+    .WhoWeAre-content__plataform__separator {
+      display: none;
+    }
+  
+    .WhoWeAre-content__plataform__title h2 {
+      padding-top: 2rem;
+      font-size: 28px;
+      width: auto;
+      text-align: center;
+    }
+  
+    .WhoWeAre-content__plataform__text p {
+      font-size: 20px;
+      width: auto;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .WhoWeAre {
+      padding-inline: 2rem;
+    }
+  
+    .WhoWeAre-content__plataform__title h2 {
+      font-size: 26px;
+    }
+  
+    .WhoWeAre-content__plataform__text p {
+      font-size: 18px;
+    }
+  }

@@ -1,0 +1,192 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--secondary-color-bg);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.global {
+
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+body {
+
+  &::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+    background-color: var(--secondary-color-bg);
+
+    /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 0px;
+
+    /* roundness of the scroll thumb */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(161, 161, 161);
+
+    /* color of the scroll thumb */
+    border-radius: 8px;
+
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--secondary-color-bg);
+
+    /* creates padding around scroll thumb */
+
+    &:hover {
+      background-color: rgb(197, 197, 197);
+
+      /* color of the scroll thumb */
+    }
+  }
+
+
+
+  &.light {
+    /*--BACKGROUND--*/
+    --primary-color-bg: var(--primary-color-bg-l);
+    --secondary-color-bg: var(--secondary-color-bg-l);
+    --tertiary-color-bg: var(--tertiary-color-bg-l);
+    --transparent-bg: var(--transparent-bg-l);
+    --gradient-bg: var(--gradient-bg-l);
+    --image-bg: var(--image-bg-l);
+    --blend-image-bg: var(--blend-image-bg-l);
+
+    /*--BORDER_COLOR--*/
+    --primary-border: var(--primary-border-l);
+    --secondary-border: var(--secondary-border-l);
+    --border-button: var(--border-button-l);
+
+    /*--h1--*/
+    --primary-color-h1: var(--primary-color-h1-l);
+    --secondary-color-h1: var(--secondary-color-h1-l);
+    --tertiary-color-h1: var(--tertiary-color-h1-l);
+
+    /*--p--*/
+    --primary-color-p: var(--primary-color-p-l);
+    --primary-color-p-hover: var(--primary-color-p-hover-l);
+    --secondary-color-p: var(--secondary-color-p-l);
+    --tertiary-color-p: var(--tertiary-color-p-l);
+
+    /*--BUTTON--*/
+    --primary-button: var(--primary-button-l);
+    --primary-button-hover: var(--primary-button-hover-l);
+    --secondary-button: var(--secondary-button-l);
+    --secondary-button-hover: var(--secondary-button-hover-l);
+    --icon-bg-button: var(--icon-bg-button-l);
+    --primary-icon-color: var(--primary-icon-color-l);
+    --secondary-icon-color: var(--secondary-icon-color-l);
+
+    /*--NAVBAR--*/
+    --navbar-primary-color-bg: var(--navbar-primary-color-bg-l);
+    --navbar-secondary-color-bg: var(--navbar-secondary-color-bg-l);
+    --navbar-primary-color-icon: var(--navbar-primary-color-icon-l);
+
+    /*--SWITCH--*/
+    --switch-checked: var(--switch-checked-l);
+    --switch-bg: var(--switch-bg-l);
+    --switch-toggle: var(--switch-toggle-l);
+    --switch-toggle-hover: var(--switch-toggle-hover-l);
+    --switch-icon: var(--switch-icon-l);
+  }
+
+  &.dark {
+    /*--BACKGROUND--*/
+    --primary-color-bg: var(--primary-color-bg-d);
+    --secondary-color-bg: var(--secondary-color-bg-d);
+    --tertiary-color-bg: var(--tertiary-color-bg-d);
+    --transparent-bg: var(--transparent-bg-d);
+    --gradient-bg: var(--gradient-bg-d);
+    --image-bg: var(--image-bg-d);
+    --blend-image-bg: var(--blend-image-bg-d);
+
+    /*--BORDER_COLOR--*/
+    --primary-border: var(--primary-border-d);
+    --secondary-border: var(--secondary-border-d);
+    --border-button: var(--border-button-d);
+
+    /*--h1--*/
+    --primary-color-h1: var(--primary-color-h1-d);
+    --secondary-color-h1: var(--secondary-color-h1-d);
+    --tertiary-color-h1: var(--tertiary-color-h1-d);
+
+    /*--p--*/
+    --primary-color-p: var(--primary-color-p-d);
+    --primary-color-p-hover: var(--primary-color-p-hover-d);
+    --secondary-color-p: var(--secondary-color-p-d);
+    --tertiary-color-p: var(--tertiary-color-p-d);
+
+    /*--BUTTON--*/
+    --primary-button: var(--primary-button-d);
+    --primary-button-hover: var(--primary-button-hover-d);
+    --secondary-button: var(--secondary-button-d);
+    --secondary-button-hover: var(--secondary-button-hover-d);
+    --icon-bg-button: var(--icon-bg-button-d);
+    --primary-icon-color: var(--primary-icon-color-d);
+    --secondary-icon-color: var(--secondary-icon-color-d);
+
+    /*--NAVBAR--*/
+    --navbar-primary-color-bg: var(--navbar-primary-color-bg-d);
+    --navbar-secondary-color-bg: var(--navbar-secondary-color-bg-d);
+    --navbar-primary-color-icon: var(--navbar-primary-color-icon-d);
+
+    /*--SWITCH--*/
+    --switch-checked: var(--switch-checked-d);
+    --switch-bg: var(--switch-bg-d);
+    --switch-toggle: var(--switch-toggle-d);
+    --switch-toggle-hover: var(--switch-toggle-hover-d);
+    --switch-icon: var(--switch-icon-d);
+  }
+
+}

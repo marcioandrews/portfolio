@@ -1,0 +1,119 @@
+.footer {
+    background-color: var(--primary-color-bg);
+    justify-content: center;
+    flex-direction: row;
+    padding-inline: 20rem;
+    padding-block: 2.5rem;
+    width: 100%;
+  }
+  
+  .footer-content__simova {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer-content__simova__address {
+    img {
+      width: 135px;
+      height: 60px;
+    }
+  
+    p {
+      font-family: var(--font-family);
+      width: 200px;
+      font-weight: var(--regular);
+      font-size: var(--p-smallest);
+      line-height: 20px;
+      color: var(--secondary-color-p);
+      margin-top: .5rem;
+    }
+  }
+  
+  .footer-content__simova__links__bold p, .footer-content__simova__company__bold p, .footer-content__simova__contact__bold p, .footer-content__simova__social-media p {
+    font-family: var(--font-family);
+    width: 200px;
+    font-weight: var(--medium);
+    font-size: var(--p-small);
+    line-height: 20px;
+    color: var(--secondary-color-p);
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-content__simova__links__normal p, .footer-content__simova__company__normal p, .footer-content__simova__contact__normal p {
+    font-family: var(--font-family);
+    width: 200px;
+    font-weight: var(--regular);
+    font-size: var(--p-smallest);
+    line-height: 20px;
+    color: var(--secondary-color-p);
+    margin-top: .5rem;
+    cursor: pointer;
+  }
+  
+  .footer-content__simova__social-media svg {
+    fill: var(--secondary-icon-color);
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .footer-content__copyright {
+    display: flex;
+    justify-content: center;
+  
+    p {
+      font-family: var(--font-family);
+      font-weight: var(--regular);
+      font-size: var(--p-small);
+      line-height: 28px;
+      color: var(--secondary-color-p);
+      margin-top: 2.5rem;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 1920px) {
+    .footer {
+      padding-inline: 6rem;
+    }
+  }
+  
+  @media screen and (max-width: 1260px) {
+    .footer {
+      padding-inline: 4rem;
+    }
+  
+    .footer-content__simova__address {
+      padding-right: 2rem;
+    }
+  
+    .footer-content__simova__links, .footer-content__simova__company {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 770px) {
+    .footer {
+      padding-inline: 2rem;
+    }
+  
+    .footer-content__simova {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .footer-content__simova__contact__normal, .footer-content__simova__address {
+      padding-bottom: 2rem;
+  
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .footer-content__copyright p {
+      font-size: 14px;
+    }
+  }
