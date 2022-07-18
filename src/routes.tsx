@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Landing from './pages/Landing';
 import Contact from './pages/Contact';
@@ -15,11 +15,12 @@ function Routes() {
             <Navbar/>
             <Switch >
                 <Route path={"/"} exact component={Landing} />
-                <Route path={"/contact"}  component={Contact} />
-                <Route path={"/suport"}  component={Suport} />
-                <Route path={"/construction"} component={Construction} />
-                <Route path={"/agribusiness"} component={Agribusiness} />
-                <Route path={"/orderOfService"} component={OrderOfService} />
+                <Route path={"/portfolio/"} exact component={Landing} />
+                <Route path={"/portfolio/contact"}  component={Contact} />s
+                <Route path={"/portfolio/suport"}  component={Suport} />
+                <Route path={"/portfolio/construction"} component={Construction} />
+                <Route path={"/portfolio/agribusiness"} component={Agribusiness} />
+                <Route path={"/portfolio/orderOfService"} component={OrderOfService} />
                 <Route path="*" component={NotFound} />
             </Switch>
         </BrowserRouter>

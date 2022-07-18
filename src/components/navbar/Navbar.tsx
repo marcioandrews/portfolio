@@ -75,18 +75,18 @@ function Navbar() {
                     </div>
                 </a>
                 <div className="simova__navbar-links_container">
-                    <p title={t.navbar.subTitle.whatWeDo} ><a href={"/#o-que-fazemos"}>{t.navbar.whatWeDo}</a></p>
-                    <p title={t.navbar.subTitle.solutions} ><a href={"/#solucoes"}>{t.navbar.solutions}</a></p>
-                    <p title={t.navbar.subTitle.howWeAct} ><a href={"/#como-atuamos"}>{t.navbar.howWeAct}</a></p>
-                    <p title={t.navbar.subTitle.whoWeAre} ><a href={"/#quem-somos"}>{t.navbar.whoWeAre}</a></p>
+                    <p title={t.navbar.subTitle.whatWeDo} ><a href={"/portfolio/#o-que-fazemos"}>{t.navbar.whatWeDo}</a></p>
+                    <p title={t.navbar.subTitle.solutions} ><a href={"/portfolio/#solucoes"}>{t.navbar.solutions}</a></p>
+                    <p title={t.navbar.subTitle.howWeAct} ><a href={"/portfolio/#como-atuamos"}>{t.navbar.howWeAct}</a></p>
+                    <p title={t.navbar.subTitle.whoWeAre} ><a href={"/portfolio/#quem-somos"}>{t.navbar.whoWeAre}</a></p>
                     <p title={t.navbar.subTitle.news} ><a href="https://www.simova.com.br/blog">{t.navbar.news}</a></p>
                 </div>
             </div>
             <div className="simova__navbar-support">
                 <div className="simova__navbar-support-sup">
-                    <a href={"/suport"}><p title={t.navbar.subTitle.suport} >{t.navbar.suport}</p></a>
+                    <a href={"/portfolio/suport"}><p title={t.navbar.subTitle.suport} >{t.navbar.suport}</p></a>
                 </div>
-                <a href={"/contact"}><button title={t.navbar.subTitle.contact} type="button">{t.navbar.contact}</button></a>
+                <a href={"/portfolio/contact"}><button title={t.navbar.subTitle.contact} type="button">{t.navbar.contact}</button></a>
                 <img title={languageTitle()} alt="PT_BR" src={languageActive()} />
                 <RiArrowRightSLine title='Idiomas' id={toggleLanguage ? 'arrow-rotate' : 'arrow'} onClick={dropdownLanguage} />
                 {toggleLanguage && (
@@ -112,15 +112,15 @@ function Navbar() {
                 {toggleMenu && (
                     <div className={navbar ? "simova__navbar-menu_container active scale-up-center" : "simova__navbar-menu_container scale-up-center"}>
                         <div className="simova__navbar-menu_container-links">
-                            <p title={t.navbar.subTitle.whatWeDo} ><a href={"/#o-que-fazemos"}>{t.navbar.whatWeDo}</a></p>
-                            <p title={t.navbar.subTitle.solutions} ><a href={"/#solucoes"}>{t.navbar.solutions}</a></p>
-                            <p title={t.navbar.subTitle.howWeAct} ><a href={"/#como-atuamos"}>{t.navbar.howWeAct}</a></p>
-                            <p title={t.navbar.subTitle.whoWeAre} ><a href={"/#quem-somos"}>{t.navbar.whoWeAre}</a></p>
+                            <p title={t.navbar.subTitle.whatWeDo} ><a href={"/portfolio/#o-que-fazemos"}>{t.navbar.whatWeDo}</a></p>
+                            <p title={t.navbar.subTitle.solutions} ><a href={"/portfolio/#solucoes"}>{t.navbar.solutions}</a></p>
+                            <p title={t.navbar.subTitle.howWeAct} ><a href={"/portfolio/#como-atuamos"}>{t.navbar.howWeAct}</a></p>
+                            <p title={t.navbar.subTitle.whoWeAre} ><a href={"/portfolio/#quem-somos"}>{t.navbar.whoWeAre}</a></p>
                             <p title={t.navbar.subTitle.news} ><a href="https://www.simova.com.br/blog">{t.navbar.news}</a></p>
                         </div>
                         <div className="simova__navbar-menu_container-links-support">
-                            <a href={"/suport"}><p title={t.navbar.subTitle.suport} >{t.navbar.suport}</p></a>
-                            <a href={"/contact"}><button title={t.navbar.subTitle.contact} type="button">{t.navbar.contact}</button></a>
+                            <a href={"/portfolio/suport"}><p title={t.navbar.subTitle.suport} >{t.navbar.suport}</p></a>
+                            <a href={"/portfolio/contact"}><button title={t.navbar.subTitle.contact} type="button">{t.navbar.contact}</button></a>
                             <DarkMode darkmodeON={darkmodeON} />
                         </div>
                     </div>

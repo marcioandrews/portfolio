@@ -23,7 +23,7 @@ function Solutions() {
                         <MdOutlineAgriculture />
                     </div>
                     <div className='solutions-content__links__button'>
-                        <a href={"/agribusiness"}><button title={t.solutions.subTitle.buttonAgribusiness} type="button">{t.solutions.buttonAgribusiness}</button></a>
+                        <a href={"/portfolio/agribusiness"}><button title={t.solutions.subTitle.buttonAgribusiness} type="button">{t.solutions.buttonAgribusiness}</button></a>
                     </div>
                 </div>
 
@@ -32,7 +32,7 @@ function Solutions() {
                         <BsBuilding />
                     </div>                    
                     <div className='solutions-content__links__button'>
-                        <a href={"/construction"}><button title={t.solutions.subTitle.buttonConstruction} type="button">{t.solutions.buttonConstruction}</button></a>
+                        <a href={"/portfolio/construction"}><button title={t.solutions.subTitle.buttonConstruction} type="button">{t.solutions.buttonConstruction}</button></a>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@ function Solutions() {
                         <MdOutlineBorderColor />
                     </div>                   
                     <div className='solutions-content__links__button'>
-                        <a href={"/orderOfService"}><button title={t.solutions.subTitle.buttonOrderOfService} type="button">{t.solutions.buttonOrderOfService}</button></a>
+                        <a href={"/portfolio/orderOfService"}><button title={t.solutions.subTitle.buttonOrderOfService} type="button">{t.solutions.buttonOrderOfService}</button></a>
                     </div>
                 </div>
 
