@@ -2,24 +2,11 @@ import { useState } from 'react';
 import { RiArrowRightSLine, RiSearchLine, RiCustomerService2Line } from 'react-icons/ri';
 import './suport.scss';
 import Footer from '../footer/Footer';
-import { useDispatch, useSelector } from 'react-redux'
-import { URLCheck } from '../../utils';
-import { selectTranslations } from '../../store/stock/stock.store';
-
+import { useSelector } from 'react-redux'
 
 function Suport() {
     const t = useSelector((state: any) => state.i18n.translations[state.i18n.lang]);
-    const lang = useSelector((state: any) => state.i18n.lang);
-    const dispatch = useDispatch();
 
-    function URL() {
-        let save = URLCheck(lang, "/suport")
-        if (save.isURL) {
-            dispatch(selectTranslations(save.lang))
-            localStorage.setItem("lang", save.lang);
-        }
-    };
-    URL();
     const [questionShow, setQuestionShow] = useState([false, false, false, false, false, false, false, false, false, false, false, false]);
 
     const toggleQuestion = (index: number) => {

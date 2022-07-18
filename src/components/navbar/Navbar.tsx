@@ -9,8 +9,6 @@ import DarkMode from '../darkMode/DarkModeButton';
 import './navbar.scss';
 import { selectTranslations } from '../../store/stock/stock.store'
 import { useDispatch, useSelector } from 'react-redux'
-import { BaseURL } from '../../utils';
-import { LangAction, Translations, SelectTranslations } from '../../store/types';
 import { RootState } from '../../store';
 
 function Navbar() {
@@ -27,8 +25,6 @@ function Navbar() {
 
     const changeLang = (lang: string) => {
         dispatch(selectTranslations(lang))
-        let saveURL = window.location.href.slice(BaseURL.length + 3, window.location.href.length)
-        window.location.replace(BaseURL + "/" + lang + saveURL);
     }
     const dropdownMenu = () => {
         setToggleMenu(!toggleMenu)
@@ -71,7 +67,7 @@ function Navbar() {
     return (
         <div className={navbar ? "simova__navbar active" : "simova__navbar"}>
             <div className="simova__navbar-links">
-                <a href={BaseURL + "/" + lang + "/#"}>
+                <a href={"/#"}>
                     <div className="simova__navbar-links_logo">
                         {darkmode ?
                             <img title='Simova' alt="Simova" src={logoW} /> :
@@ -79,18 +75,18 @@ function Navbar() {
                     </div>
                 </a>
                 <div className="simova__navbar-links_container">
-                    <p title={t.navbar.subTitle.whatWeDo} ><a href={BaseURL + "/" + lang + "/#o-que-fazemos"}>{t.navbar.whatWeDo}</a></p>
-                    <p title={t.navbar.subTitle.solutions} ><a href={BaseURL + "/" + lang + "/#solucoes"}>{t.navbar.solutions}</a></p>
-                    <p title={t.navbar.subTitle.howWeAct} ><a href={BaseURL + "/" + lang + "/#como-atuamos"}>{t.navbar.howWeAct}</a></p>
-                    <p title={t.navbar.subTitle.whoWeAre} ><a href={BaseURL + "/" + lang + "/#quem-somos"}>{t.navbar.whoWeAre}</a></p>
+                    <p title={t.navbar.subTitle.whatWeDo} ><a href={"/#o-que-fazemos"}>{t.navbar.whatWeDo}</a></p>
+                    <p title={t.navbar.subTitle.solutions} ><a href={"/#solucoes"}>{t.navbar.solutions}</a></p>
+                    <p title={t.navbar.subTitle.howWeAct} ><a href={"/#como-atuamos"}>{t.navbar.howWeAct}</a></p>
+                    <p title={t.navbar.subTitle.whoWeAre} ><a href={"/#quem-somos"}>{t.navbar.whoWeAre}</a></p>
                     <p title={t.navbar.subTitle.news} ><a href="https://www.simova.com.br/blog">{t.navbar.news}</a></p>
                 </div>
             </div>
             <div className="simova__navbar-support">
                 <div className="simova__navbar-support-sup">
-                    <a href={BaseURL + "/" + lang + "/suport"}><p title={t.navbar.subTitle.suport} >{t.navbar.suport}</p></a>
+                    <a href={"/suport"}><p title={t.navbar.subTitle.suport} >{t.navbar.suport}</p></a>
                 </div>
-                <a href={BaseURL + "/" + lang + "/contact"}><button title={t.navbar.subTitle.contact} type="button">{t.navbar.contact}</button></a>
+                <a href={"/contact"}><button title={t.navbar.subTitle.contact} type="button">{t.navbar.contact}</button></a>
                 <img title={languageTitle()} alt="PT_BR" src={languageActive()} />
                 <RiArrowRightSLine title='Idiomas' id={toggleLanguage ? 'arrow-rotate' : 'arrow'} onClick={dropdownLanguage} />
                 {toggleLanguage && (
@@ -116,15 +112,15 @@ function Navbar() {
                 {toggleMenu && (
                     <div className={navbar ? "simova__navbar-menu_container active scale-up-center" : "simova__navbar-menu_container scale-up-center"}>
                         <div className="simova__navbar-menu_container-links">
-                            <p title={t.navbar.subTitle.whatWeDo} ><a href={BaseURL + "/" + lang + "/#o-que-fazemos"}>{t.navbar.whatWeDo}</a></p>
-                            <p title={t.navbar.subTitle.solutions} ><a href={BaseURL + "/" + lang + "/#solucoes"}>{t.navbar.solutions}</a></p>
-                            <p title={t.navbar.subTitle.howWeAct} ><a href={BaseURL + "/" + lang + "/#como-atuamos"}>{t.navbar.howWeAct}</a></p>
-                            <p title={t.navbar.subTitle.whoWeAre} ><a href={BaseURL + "/" + lang + "/#quem-somos"}>{t.navbar.whoWeAre}</a></p>
+                            <p title={t.navbar.subTitle.whatWeDo} ><a href={"/#o-que-fazemos"}>{t.navbar.whatWeDo}</a></p>
+                            <p title={t.navbar.subTitle.solutions} ><a href={"/#solucoes"}>{t.navbar.solutions}</a></p>
+                            <p title={t.navbar.subTitle.howWeAct} ><a href={"/#como-atuamos"}>{t.navbar.howWeAct}</a></p>
+                            <p title={t.navbar.subTitle.whoWeAre} ><a href={"/#quem-somos"}>{t.navbar.whoWeAre}</a></p>
                             <p title={t.navbar.subTitle.news} ><a href="https://www.simova.com.br/blog">{t.navbar.news}</a></p>
                         </div>
                         <div className="simova__navbar-menu_container-links-support">
-                            <a href={BaseURL + "/" + lang + "/suport"}><p title={t.navbar.subTitle.suport} >{t.navbar.suport}</p></a>
-                            <a href={BaseURL + "/" + lang + "/contact"}><button title={t.navbar.subTitle.contact} type="button">{t.navbar.contact}</button></a>
+                            <a href={"/suport"}><p title={t.navbar.subTitle.suport} >{t.navbar.suport}</p></a>
+                            <a href={"/contact"}><button title={t.navbar.subTitle.contact} type="button">{t.navbar.contact}</button></a>
                             <DarkMode darkmodeON={darkmodeON} />
                         </div>
                     </div>

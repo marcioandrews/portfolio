@@ -6,8 +6,7 @@ import Construmobil from '../../assets/construmobil.png';
 import LogoSimovaElement from '../../assets/logoSimovaElement.svg';
 
 function Agribusiness() {
-    const teste = navigator.language
-    console.log(teste)
+
     return (
         <div className='construction' id='construction' >
             <div className='construction-content__header' style={{backgroundImage: `url(${BackgroundAgribusiness})`}}>
