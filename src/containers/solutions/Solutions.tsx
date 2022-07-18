@@ -9,12 +9,9 @@ import Logooracle from '../../assets/logo-oracle.png';
 import LogoSAP from '../../assets/logo-SAP.png';
 import LogoTOTVS from '../../assets/logo-TOTVS.png';
 import { useSelector } from 'react-redux';
-import { BaseURL } from '../../utils';
-import { RootState } from '../../store';
 
 function Solutions() {
     const t = useSelector((state: any) => state.i18n.translations[state.i18n.lang]);
-    const lang = useSelector((state:RootState) => state.i18n.lang);
     return (
         <div className='solutions' style={{backgroundImage: `url(${Background})`}} id='solucoes'>
             <div className='solutions-content__title'>
@@ -26,7 +23,7 @@ function Solutions() {
                         <MdOutlineAgriculture />
                     </div>
                     <div className='solutions-content__links__button'>
-                        <a href={BaseURL + "/" + lang + "/agribusiness"}><button title={t.solutions.subTitle.buttonAgribusiness} type="button">{t.solutions.buttonAgribusiness}</button></a>
+                        <a href={"/agribusiness"}><button title={t.solutions.subTitle.buttonAgribusiness} type="button">{t.solutions.buttonAgribusiness}</button></a>
                     </div>
                 </div>
 
@@ -35,7 +32,7 @@ function Solutions() {
                         <BsBuilding />
                     </div>                    
                     <div className='solutions-content__links__button'>
-                        <a href={BaseURL + "/" + lang + "/construction"}><button title={t.solutions.subTitle.buttonConstruction} type="button">{t.solutions.buttonConstruction}</button></a>
+                        <a href={"/construction"}><button title={t.solutions.subTitle.buttonConstruction} type="button">{t.solutions.buttonConstruction}</button></a>
                     </div>
                 </div>
 
@@ -44,7 +41,7 @@ function Solutions() {
                         <MdOutlineBorderColor />
                     </div>                   
                     <div className='solutions-content__links__button'>
-                        <a href={BaseURL + "/" + lang + "/orderOfService"}><button title={t.solutions.subTitle.buttonOrderOfService} type="button">{t.solutions.buttonOrderOfService}</button></a>
+                        <a href={"/orderOfService"}><button title={t.solutions.subTitle.buttonOrderOfService} type="button">{t.solutions.buttonOrderOfService}</button></a>
                     </div>
                 </div>
 
